@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from './App.module.css';
+
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
 import Playlist from './components/Playlist/Playlist';
@@ -8,10 +10,12 @@ import Track from './components/Track/Track';
 function App() {
     return (
         <>
-            <h1>Hello</h1>
+            <header className={styles.header}>Jammming</header>
             <SearchBar />
-            <SearchResults />
-            <Playlist />
+            <div className={styles.div}>
+                <SearchResults />
+                <Playlist />
+            </div>
             <Tracklist />
             <Track />
         </>

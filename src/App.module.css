@@ -1,0 +1,15 @@
+.header {
+    color: cornflowerblue;
+    font-size: 4rem;
+    text-align: center;
+    background-color: lightgreen;
+    padding: .75rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.div {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem;
+}

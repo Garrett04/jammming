@@ -1,0 +1,36 @@
+.div {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.input {
+    text-align: center;
+    width: 18rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.searchBtn {
+    margin: 1rem auto;
+    width: 10rem;
+    background: orange;
+    border-radius: 2rem;
+    padding: .4rem;
+}
+
+.img {
+    width: 1.5rem;
+    margin-right: .5rem;
+    vertical-align: text-bottom;
+}
+
+.h2 {
+    display: inline;
+    font-size: 1.5rem;
+}
