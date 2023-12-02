@@ -8,9 +8,10 @@
 
 .input {
     text-align: center;
-    width: 18rem;
-    height: 2.2rem;
-    font-size: 1.2rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    outline: none;
     border: 1px solid black;
     border-radius: 1rem;
     margin-bottom: 1rem;

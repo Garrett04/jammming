@@ -10,8 +10,10 @@ function Playlist() {
 
     return (
         <div className={styles.div}>
-            <input className={styles.input} type='text' value={playlistName} onChange={handleChange} />
-            <div className={styles.line}></div>
+            <div className={styles.inputContainer}>
+                <input className={styles.input} type='text' value={playlistName} onChange={handleChange} />
+            </div>
+            <button className={styles.button}>Save to Spotify</button>
         </div>
     )
 }

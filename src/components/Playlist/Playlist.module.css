@@ -1,49 +1,36 @@
 .div {
+    width: 45%;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: lavender;
+    margin: auto;
+}
+
+.inputContainer {
     display: flex;
     flex-flow: column wrap;
-    border-radius: 2rem;
-    border: 1px solid black;
-    background: lavender;
-    width: 45%;
-    position: relative;
+    width: 100%;
 }
 
 .input {
     margin: auto;
-    width: 26rem;
-    height: 3rem;
-    border-bottom: 3px solid black;
-    background: 0;
-    border: 0;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    background: rgb(156, 156, 172);
+    border: none;
+    border-bottom: 2px solid black;
     outline: none;
     font-size: 1.5rem;
-    transition: padding 0.3s 0.2s ease;
+    font-weight: bold;
 }
 
-.input:focus {
-    padding-bottom: 5px;
-}
-
-.input:focus + .line:after {
-    transform: scaleX(1);
-}
-
-.div .line {
-    width: 28rem;
-    height: 3px;
-    position: absolute;
-    bottom: 0.5rem;
-    background: #bdc3c7;
-    left: 2rem;
-}
-
-.div .line:after {
-    content: " ";
-    position: absolute;
-    float: right;
-    width: 28rem;
-    height: 3px;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    background: goldenrod;
+.button {
+    font-size: 1.5rem;
+    display: flex;
+    margin: 1rem auto;
+    height: auto;
+    background: skyblue;
+    border-radius: 1rem;
+    padding: .5rem;
 }
