@@ -1,4 +1,4 @@
-let clientId = ''; // Put in your api key
+let clientId = 'b6227a0f8d7b4e3e9dedd2b6e808f395'; // Put in your api key
 const redirectUri = 'http://localhost:3000/';
 let accessToken = '';
 

@@ -20,11 +20,13 @@ function App() {
         if (playlistTracks.some((savedTrack) => savedTrack.id === track.id)) 
         return;
 
+        setSearchResults((prevTracks) => prevTracks.filter((currentTrack) => currentTrack.id !== track.id));
         setPlaylistTracks((prevTracks) => [...prevTracks, track]);
     }, [playlistTracks]);
 
     const removeTrack = useCallback((track) => {
         setPlaylistTracks((prevTracks) => prevTracks.filter((currentTrack) => currentTrack.id !== track.id));
+        setSearchResults((prevTracks) => [track, ...prevTracks]);
     }, []);
 
     const updatePlaylistName = useCallback((name) => {
