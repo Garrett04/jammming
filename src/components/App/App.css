@@ -10,15 +10,24 @@ html {
 
 h1 {
   padding: .77rem 0;
-  background-color: #010c3f;
+  background-color: rgb(6, 10, 29);
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
+  font-family: 'Rubik Bubbles', sans-serif;
+  font-size: 3rem;
   color: #fff;
+  font-weight: normal;
+}
+
+@keyframes colorChange {
+  0% {color: hsl(240, 100%, 62%); }
+  25% { color: hsl(140, 100%, 42%); }
+  50% { color: hsl(180, 100%, 42%); }
+  75% { color: hsl(220, 100%, 42%); }
+  100% { color: hsl(240, 100%, 62%); }
 }
 
 h1 .highlight {
-  color: #6c41ec;
+  animation: colorChange 20s infinite;
 }
 
 h2 {
@@ -28,7 +37,7 @@ h2 {
 
 .App {
   height: 100%;
-  padding: 0 17% 10% 17%;
+  padding: 0 12% 10% 12%;
   background-image: url('./background-photo.jpg');
   background-size: cover;
   background-position: center;

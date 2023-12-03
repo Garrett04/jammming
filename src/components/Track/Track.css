@@ -7,7 +7,7 @@
 .Track-action {
   cursor: pointer;
   padding: .5rem;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   transition: color .25s;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72px;
+  height: 5.85rem;
 }
 
 .Track-information h3 {
