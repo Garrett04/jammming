@@ -44,7 +44,7 @@ function App() {
             <h1>Ja<span className='highlight'>mmm</span>ing</h1>
             <div className='App'>
                 <SearchBar onSearch={search} />
-                <div className='App-playlist'>
+                <div className='Main'>
                     <SearchResults 
                         searchResults={searchResults}
                         onAdd={addTrack}
