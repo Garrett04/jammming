@@ -15,7 +15,7 @@ function SearchBar(props) {
     return (
         <div className={styles.div}>
             <input className={styles.input} placeholder='Enter a Song Title' onChange={handleUserInput}/>
-            <button className={styles.searchBtn}>
+            <button className={styles.searchBtn} onClick={search}>
                 <img className={styles.img} src='./images/search-icon.svg'/>
                 <h2 className={styles.h2}>Search</h2>
             </button>

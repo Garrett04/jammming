@@ -4,38 +4,17 @@ import styles from './App.module.css';
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
 import Playlist from './components/Playlist/Playlist';
+import Spotify from './util/Spotify';
 
 function App() {
-    const [ searchResults, setSearchResults ] = useState([
-        {
-            name: "Example Track Name",
-            artist: "Example Track Artist",
-            album: "Example Track Album",
-            id: 1,
-        },
-        {
-            name: "Example Track Name 2",
-            artist: "Example Track Artist 2",
-            album: "Example Track Album 2",
-            id: 2,
-        },
-    ]);
-
+    const [ searchResults, setSearchResults ] = useState([]);
     const [ playlistName, setPlaylistName ] = useState("New Playlist");
-    const [ playlistTracks, setPlaylistTracks ] = useState([
-        {
-            name: "Example PlaylistTrack Name",
-            artist: "Example PlaylistTrack Artist",
-            album: "Example PlaylistTrack Album",
-            id: 3,
-        },
-        {
-            name: "Example PlaylistTrack Name 4",
-            artist: "Example PlaylistTrack Artist 4",
-            album: "Example PlaylistTrack Album 4",
-            id: 4,
-        },
-    ]);
+    const [ playlistTracks, setPlaylistTracks ] = useState([]);
+
+    const search = useCallback((term) => {
+        // console.log(term);
+        Spotify.search(term).then(setSearchResults);
+    }, []);
  
     const addTrack = useCallback((track) => {
         if (playlistTracks.some((savedTrack) => savedTrack.id === track.id)) 
@@ -54,11 +33,11 @@ function App() {
 
     const savePlaylist = useCallback(() => {
         const trackURIs = playlistTracks.map((track) => track.uri);
-    });
-
-    const search = useCallback((term) => {
-        console.log(term);
-    }, [])
+        Spotify.savePlaylist(playlistName, trackURIs).then(() => {
+            setPlaylistName('New Playlist');
+            setPlaylistTracks([]);
+        });
+    }, [playlistName, playlistTracks]);
 
     return (
         <>
