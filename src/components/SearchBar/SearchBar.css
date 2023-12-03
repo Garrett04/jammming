@@ -15,10 +15,13 @@
   color: #010c3f;
   text-align: center;
   font-size: 1.2rem;
+  transition: width .1s ease-out;
 }
 
 .SearchBar input:focus {
   outline: none;
+  width: 23rem;
+  transition: width .1s ease-in;
 }
 
 .SearchButton {
