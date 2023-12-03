@@ -40,7 +40,8 @@
 }
 
 .SearchButton h2 {
-  font-weight: lighter;
+  font-weight: bold;
+  font-family: 'serif';
 }
 
 .SearchButton:hover {
