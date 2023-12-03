@@ -20,7 +20,7 @@
 
 .SearchBar input:focus {
   outline: none;
-  width: 23rem;
+  width: 21rem;
   transition: width 0.15s ease-in;
 }
 
