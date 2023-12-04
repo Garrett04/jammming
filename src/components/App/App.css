@@ -15,7 +15,7 @@ h1 {
   font-family: 'Rubik Bubbles', sans-serif;
   font-size: 3rem;
   color: #fff;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 @keyframes colorChange {

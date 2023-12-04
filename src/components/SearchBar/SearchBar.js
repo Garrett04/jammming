@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import './SearchBar.css';
+import searchIcon from '../../images/search-icon.svg';
 
 function SearchBar(props) {
     const [ userInput, setUserInput ] = useState('');
@@ -16,7 +17,7 @@ function SearchBar(props) {
         <div className='SearchBar'>
             <input placeholder='Enter a Song Title' onChange={handleUserInput}/>
             <button className='SearchButton' onClick={search}>
-                <img src='./images/search-icon.svg'/>
+                <img src={searchIcon}/>
                 <h2>Search</h2>
             </button>
         </div>
