@@ -1,4 +1,4 @@
-let clientId = process.env.SPOTIFY_CLIENT_ID;
+let clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const redirectUri = 'https://jammming-rosy.vercel.app/';
 let accessToken = '';
 
