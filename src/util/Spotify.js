@@ -1,5 +1,5 @@
 let clientId = 'process.env.SPOTIFY_CLIENT_ID';
-const redirectUri = 'process.env.SPOTIFY_REDIRECT_URI';
+const redirectUri = 'https://jammming-rosy.vercel.app';
 let accessToken = '';
 
 const Spotify = {
