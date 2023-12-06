@@ -1,5 +1,5 @@
-let clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-const redirectUri = 'https://jammming-eosin-zeta.vercel.app';
+let clientId = process.env.REACT_APP_CLIENT_ID;
+const redirectUri = process.env.REACT_APP_REDIRECT_URI;
 let accessToken = '';
 
 const Spotify = {
