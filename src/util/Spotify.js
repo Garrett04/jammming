@@ -1,5 +1,5 @@
-let clientId = ''; // Put in your api key
-const redirectUri = 'http://localhost:3000/';
+let clientId = 'process.env.SPOTIFY_CLIENT_ID';
+const redirectUri = 'process.env.SPOTIFY_REDIRECT_URI';
 let accessToken = '';
 
 const Spotify = {
